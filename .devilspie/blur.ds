@@ -11,6 +11,7 @@
 		(is (window_class) "kwrite")
 		(is (window_class) "spectacle")
 		(is (window_class) "lattedock")
+		(is (window_class) "kwin")
 	)
 	(begin
 		(spawn_async (str "xprop -id " (window_xid) " -f _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0 "))
