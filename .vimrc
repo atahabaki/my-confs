@@ -1,8 +1,5 @@
-set tabstop=4
-set softtabstop=0 noexpandtab
-set shiftwidth=4
-set number
-set numberwidth=1
+set ts=2 sw=2
+set number numberwidth=1 relativenumber
 syntax on
 
 set termguicolors
