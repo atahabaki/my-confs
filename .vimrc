@@ -4,4 +4,4 @@ set number numberwidth=1 relativenumber
 syntax on
 
 set termguicolors
-colorscheme panic
+colorscheme archman

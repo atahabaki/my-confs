@@ -17,6 +17,9 @@
 		(is (window_class) "Code")
 		(is (window_class) "okular")
 		(is (window_class) "vim")
+		(is (window_class) "kwin_rules_dialog")
+		(is (window_class) "kwalletd5")
+		(is (window_class) "polkit-kde-authentication-agent-1")
 	)
 	(begin
 		(spawn_async (str "xprop -id " (window_xid) " -f _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0 "))
