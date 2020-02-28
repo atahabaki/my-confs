@@ -19,6 +19,7 @@
 		(is (window_class) "vim")
 		(is (window_class) "kwin_rules_dialog")
 		(is (window_class) "kwalletd5")
+		(is (window_class) "kcmshell5")
 		(is (window_class) "polkit-kde-authentication-agent-1")
 	)
 	(begin
