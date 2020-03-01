@@ -1,11 +1,15 @@
-alias gitinit='git init .'
-alias gitstat='git status'
-alias gitadde='git add *'
-alias gitcomm='git commit -m'
-alias gitpush='git push -u'
-alias gitremadd='git remote add'
-alias gitcln='git clone'
-alias gitpull='git pull'
+if [ -e "$(which git)" ]
+then
+	alias gitinit='git init .'
+	alias gitstat='git status'
+	alias gitadde='git add *'
+	alias gitcomm='git commit -m'
+	alias gitpush='git push -u'
+	alias gitpsh='git push -u origin master'
+	alias gitremadd='git remote add'
+	alias gitcln='git clone'
+	alias gitpull='git pull'
+fi
 alias ali='ls -alih'
 alias grep='grep --color=auto'
 alias getheads='curl -I'
