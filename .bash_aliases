@@ -27,3 +27,7 @@ if [ -e "$(which vim)" ]
 then
 	alias suvim='sudo vim'
 fi
+if [ -e "$(which ffplay)" ]
+then
+	alias play3="ffplay -nodisp"
+fi
