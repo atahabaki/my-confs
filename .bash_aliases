@@ -22,6 +22,7 @@ then
 	alias pacfnd='pacman -Ss'
 	alias pacfltr='pacman -Qs'
 	alias pacrm='sudo pacman -Rss'
+	alias pacrmq='sudo pacman -Rsscnd'
 fi
 if [ -e "$(which nvim)" ]
 then
