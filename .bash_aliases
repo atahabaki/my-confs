@@ -23,9 +23,10 @@ then
 	alias pacfltr='pacman -Qs'
 	alias pacrm='sudo pacman -Rss'
 fi
-if [ -e "$(which vim)" ]
+if [ -e "$(which nvim)" ]
 then
-	alias suvim='sudo vim'
+	alias v='nvim'
+	alias sv='sudo vim'
 fi
 if [ -e "$(which ffplay)" ]
 then
