@@ -16,6 +16,7 @@ alias getheads='curl -I'
 alias upgrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias relinux='sudo mkinitcpio -P'
 alias sysctl='systemctl'
+alias cls='clear'
 if [ -e "$(which pacman)" ]
 then
 	alias pacup='sudo pacman -Syu'
