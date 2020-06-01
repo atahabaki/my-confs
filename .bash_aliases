@@ -10,6 +10,7 @@ then
 	alias gitcln='git clone'
 	alias gitpull='git pull'
 fi
+alias ls='ls --color=auto'
 alias ali='ls -alih'
 alias grep='grep --color=auto'
 alias getheads='curl -I'
@@ -22,13 +23,13 @@ then
 	alias pacup='sudo pacman -Syu'
 	alias pacfnd='pacman -Ss'
 	alias pacfltr='pacman -Qs'
-	alias pacrm='sudo pacman -Rss'
-	alias pacrmq='sudo pacman -Rsscnd'
+	alias pacrm='sudo pacman -R'
+	alias pacrmx='sudo pacman -Rns $(pacman -Qtdq)'
 fi
 if [ -e "$(which nvim)" ]
 then
 	alias v='nvim'
-	alias sv='sudo vim'
+	alias sv='sudo nvim'
 fi
 if [ -e "$(which ffplay)" ]
 then
