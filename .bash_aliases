@@ -26,6 +26,16 @@ then
 	alias pacrm='sudo pacman -R'
 	alias pacrmx='sudo pacman -Rns $(pacman -Qtdq)'
 fi
+if [ -e "$(which python3)" ]
+then
+	alias p3="python3"
+	alias sp3="sudo python3"
+fi
+if [ -e "$(which youtube-dl)" ]
+then
+	alias ytdl="youtube-dl"
+	alias ytdl3="ytdl -x --audio-format mp3 -o '%(title)s.%(ext)s'"
+fi
 if [ -e "$(which nvim)" ]
 then
 	alias v='nvim'
@@ -34,4 +44,13 @@ fi
 if [ -e "$(which ffplay)" ]
 then
 	alias play3="ffplay -nodisp"
+fi
+if [ -e "$(which ffmpeg)" ]
+then
+	screen_res="1366x768"
+	alias recsrc="ffmpeg -f x11grab -s '$screen_res' -i :0.0 \"$HOME/Videos/Recording$(date '+%M.%d').mp4\""
+fi
+if [ -e "$(which yapman.sh)" ] 
+then
+	alias yapman="yapman.sh"
 fi
