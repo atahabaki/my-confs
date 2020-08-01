@@ -25,6 +25,8 @@ then
 	alias pacfltr='pacman -Qs'
 	alias pacrm='sudo pacman -R'
 	alias pacrmx='sudo pacman -Rns $(pacman -Qtdq)'
+	alias pacc='sudo pacman -Sc'
+	alias paccx='sudo pacman -Scc'
 fi
 if [ -e "$(which python3)" ]
 then
