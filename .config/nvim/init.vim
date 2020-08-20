@@ -4,9 +4,11 @@
 call plug#begin('~/.config/nvim/plugged')
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'digitaltoad/vim-pug'
+Plug 'rust-lang/rust.vim'
 "===============================================
 "### Themes
 "===============================================
+Plug 'sjl/badwolf', { 'as': 'badwolf' }
 Plug 'sainnhe/gruvbox-material', { 'as': 'gruvbox-material' }
 Plug 'atahabaki/archman-vim', { 'as': 'archman' }
 Plug 'franbach/miramare', { 'as': 'miramare' }
@@ -32,7 +34,7 @@ set hlsearch              "higlight search
 set wildmode=longest,list "get bash-like tab complete
 filetype plugin indent on "get file-type specific indents...
 syntax on
-color gruvbox-material
+color miramare
 "===============================================
 "### Keybindings
 "===============================================
@@ -51,3 +53,13 @@ nnoremap <Leader>rt :vs ~/Documents/Dox/tasx.md<CR>
 set pyxversion=3
 let g:python_host_prog = "/usr/bin/python2"
 let g:python3_host_prog = "/usr/bin/python3"
+"===============================================
+"### Rust
+"===============================================
+let g:rustfmt_autosave = 1
+"===============================================
+"### Themes (BadWolf)
+"===============================================
+let g:badwolf_darkgutter = 1
+let g:badwolf_tabline = 0
+let g:badwolf_css_props_highlight = 1
