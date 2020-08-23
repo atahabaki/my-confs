@@ -56,3 +56,9 @@ if [ -e "$(which yapman.sh)" ]
 then
 	alias yapman="yapman.sh"
 fi
+if [ -e "$(which apt)" ]
+then
+	alias aptup="apt update && apt dist-upgrade"
+	alias aptins="apt install"
+	alias aptprg="apt purge"
+fi
