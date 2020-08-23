@@ -15,8 +15,9 @@ then
 else
 	if [ -e "$HOME/.bashrc" ]
 	then
-		echo Shit
-		if ! grep -qF `echo .bashrc` "$HOME/.bashrc"; then
+		echo -e "~/.bashrc file exist.\nChecking if it has these configs..."
+		if ! grep -qF "#==A. Taha Baki==#" "$HOME/.bashrc"; then
+			echo "Does not!.."
 			cat .bashrc >> "$HOME/.bashrc"
 		fi
 	else
