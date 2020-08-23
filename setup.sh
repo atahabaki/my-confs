@@ -8,6 +8,12 @@ then
 		cp "$HOME/.bash_general" .
 		cp "$HOME/.config/nvim/init.vim" .config/nvim/
 		echo "Done!"
+	elif [ $1 == "--force" ]
+	then
+		echo "Forcing..."
+		cp -r .bash* $HOME
+		cp -r .config* $HOME
+		echo "Done!.."
 	else
 		echo -e "Wrong argument passed. Take a quick look...\n"
 		sed 's/\t/\ \ /g' setup.sh
