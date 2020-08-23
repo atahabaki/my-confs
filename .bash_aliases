@@ -58,7 +58,8 @@ then
 fi
 if [ -e "$(which apt)" ]
 then
-	alias aptup="apt update && apt dist-upgrade"
-	alias aptins="apt install"
-	alias aptprg="apt purge"
+	alias aptup="sudo apt update && apt dist-upgrade"
+	alias aptins="sudo apt install"
+	alias aptprg="sudo apt purge"
+	alias aptrmx="sudo apt auto-remove"
 fi
