@@ -67,6 +67,6 @@ if [ -e "/sys/devices/platform/asus-nb-wmi/hwmon/hwmon3/pwm1" ]
 then
 	alias fanfull="sudo -- sh -c 'echo 255 > /sys/devices/platform/asus-nb-wmi/hwmon/hwmon3/pwm1'"
 	alias fanstop="sudo -- sh -c 'echo 0 > /sys/devices/platform/asus-nb-wmi/hwmon/hwmon3/pwm1'"
-	alias fanauto="sudo -- sh -c 'echo 2> /sys/devices/platform/asus-nb-wmi/hwmon/hwmon3/pwm1_enable'"
+	alias fanauto="sudo -- sh -c 'echo 2 > /sys/devices/platform/asus-nb-wmi/hwmon/hwmon3/pwm1_enable'"
 	alias fanman="sudo -- sh -c 'echo 1 > /sys/devices/platform/asus-nb-wmi/hwmon/hwmon3/pwm1_enable'"
 fi
