@@ -22,6 +22,7 @@ if [ -e "$(which pacman)" ]
 then
 	alias pacup='sudo pacman -Syu'
 	alias pacfnd='pacman -Ss'
+	alias pacffl='sudo pacman -Fy'
 	alias pacfltr='pacman -Qs'
 	alias pacrm='sudo pacman -R'
 	alias pacrmx='sudo pacman -Rns $(pacman -Qtdq)'
@@ -66,8 +67,8 @@ fi
 hwmon_pin=`ls /sys/devices/platform/asus-nb-wmi/hwmon`
 if [ -e "/sys/devices/platform/asus-nb-wmi/hwmon/${hwmon_pin}/pwm1" ]
 then
-	alias fanfull="sudo -- sh -c 'echo 255 > /sys/devices/platform/asus-nb-wmi/hwmon/hwmon4/pwm1'"
-	alias fanstop="sudo -- sh -c 'echo 0 > /sys/devices/platform/asus-nb-wmi/hwmon/hwmon4/pwm1'"
-	alias fanauto="sudo -- sh -c 'echo 2 > /sys/devices/platform/asus-nb-wmi/hwmon/hwmon4/pwm1_enable'"
-	alias fanman="sudo -- sh -c 'echo 1 > /sys/devices/platform/asus-nb-wmi/hwmon/hwmon4/pwm1_enable'"
+	alias fanfull="sudo -- sh -c 'echo 255 > /sys/devices/platform/asus-nb-wmi/hwmon/${hwmon_pin}/pwm1'"
+	alias fanstop="sudo -- sh -c 'echo 0 > /sys/devices/platform/asus-nb-wmi/hwmon/${hwmon_pin}/pwm1'"
+	alias fanauto="sudo -- sh -c 'echo 2 > /sys/devices/platform/asus-nb-wmi/hwmon/${hwmon_pin}/pwm1_enable'"
+	alias fanman="sudo -- sh -c 'echo 1 > /sys/devices/platform/asus-nb-wmi/hwmon/${hwmon_pin}/pwm1_enable'"
 fi
