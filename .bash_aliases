@@ -11,7 +11,9 @@ then
 	alias gitpull='git pull'
 fi
 alias ls='ls --color=auto'
-alias ali='ls -alih'
+alias l='ls -alih'
+alias c='cd'
+alias ..='cd ..'
 alias grep='grep --color=auto'
 alias getheads='curl -I'
 alias upgrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
