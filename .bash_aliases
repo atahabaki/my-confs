@@ -12,6 +12,10 @@ then
 	alias gitcln='git clone'
 	alias gitpull='git pull'
 fi
+if [ -e "$(which startx)" ]
+then
+	alias stx="startx"
+fi
 alias ls='ls --color=auto'
 alias l='ls -alih'
 alias c='cd'
