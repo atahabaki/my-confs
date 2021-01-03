@@ -4,6 +4,7 @@ then
 	alias gitstat='git status'
 	alias gitadde='git add *'
 	alias git+='git add '
+	alias git-='git diff '
 	alias gitcomm='git commit -m'
 	alias gitpush='git push -u'
 	alias gitpsh='git push -u origin master'
