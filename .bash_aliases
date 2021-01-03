@@ -48,7 +48,7 @@ then
 fi
 if [ -e "$(which ffplay)" ]
 then
-	alias play3="ffplay -nodisp"
+	alias play3="ffplay -nodisp -autoexit"
 fi
 if [ -e "$(which ffmpeg)" ]
 then
