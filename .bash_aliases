@@ -3,6 +3,7 @@ then
 	alias gitinit='git init .'
 	alias gitstat='git status'
 	alias gitadde='git add *'
+	alias git+='git add '
 	alias gitcomm='git commit -m'
 	alias gitpush='git push -u'
 	alias gitpsh='git push -u origin master'
