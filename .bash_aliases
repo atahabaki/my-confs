@@ -16,6 +16,10 @@ if [ -e "$(which startx)" ]
 then
 	alias stx="startx"
 fi
+if [ -e "$(which shutdown)" ]
+then
+	alias sdown="shutdown -P 0"
+fi
 alias ls='ls --color=auto'
 alias l='ls -alih'
 alias c='cd'
