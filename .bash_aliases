@@ -24,6 +24,9 @@ alias ls='ls --color=auto'
 alias l='ls -alih'
 alias c='cd'
 alias ..='cd ..'
+mkcdir() {
+	mkdir -p -- "$1" && cd -P -- "$1"
+}
 alias grep='grep --color=auto'
 alias getheads='curl -I'
 alias upgrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
