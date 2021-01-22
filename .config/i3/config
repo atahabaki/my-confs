@@ -113,7 +113,7 @@ bindsym $mod+a focus parent
 bindsym $mod+Tab workspace next
 
 # for move workspaces between displays
-bindsym $mod+p move workspace to output rightTab workspace next
+bindsym $mod+p move workspace to output right
 
 # focus the child container
 #bindsym $mod+d focus child
