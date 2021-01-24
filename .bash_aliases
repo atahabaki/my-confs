@@ -7,7 +7,7 @@ then
 	alias git-='git diff '
 	alias gitcomm='git commit -m'
 	alias gitpush='git push -u'
-	alias gitpsh='git push -u origin master'
+	alias gitpsh='git push -u origin `get_git_branch`'
 	alias gitremadd='git remote add'
 	alias gitcln='git clone'
 	alias gitpull='git pull'
