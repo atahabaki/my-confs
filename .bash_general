@@ -1,5 +1,5 @@
 get_git_branch_with_parantheses() {
-	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+	get_git_branch | sed 's/\(.*\)/ (\1)/'
 }
 
 get_git_branch() {
