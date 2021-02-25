@@ -120,16 +120,16 @@ bindsym $mod+p move workspace to output right
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 ""
-set $ws2 ""
-set $ws3 ""
-set $ws4 ""
-set $ws5 ""
-set $ws6 ""
-set $ws7 ""
-set $ws8 ""
-set $ws9 ""
-set $ws10 ""
+set $ws1 " Desktop"
+set $ws2 " Web"
+set $ws3 " Terminal"
+set $ws4 " Code"
+set $ws5 " Recording"
+set $ws6 " Artwork"
+set $ws7 " Reading"
+set $ws8 " Blender"
+set $ws9 " Messaging"
+set $ws10 " Music"
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -218,7 +218,7 @@ bar {
 	i3bar_command i3bar --transparency
 }
 
-for_window [class="jetbrains-studio"] floating enable
+#for_window [class="jetbrains-studio"] floating enable
 for_window [class="jetbrains-studio"] move container to workspace $ws4
 for_window [class="Brave-browser-beta"] move container to workspace $ws2
 for_window [class="konsole"] move container to workspace $ws3
