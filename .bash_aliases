@@ -37,7 +37,7 @@ if [ -e "$(which pacman)" ]
 then
 	alias pacup='sudo pacman -Syu'
 	alias pacfnd='pacman -Ss'
-	alias pacffl='sudo pacman -Fy'
+	alias pacffl='sudo pacman -F'
 	alias pacfltr='pacman -Qs'
 	alias pacrm='sudo pacman -R'
 	alias pacrmx='sudo pacman -Rns $(pacman -Qtdq)'
