@@ -70,6 +70,8 @@ nnoremap <Leader>rs :so ~/.config/nvim/init.vim<CR>
 nnoremap <Leader>gs :call CocAction('jumpDefinition', 'vsplit')
 nnoremap <F3> :set hlsearch!<CR>
 nnoremap <Leader>rt :vs ~/Documents/Dox/tasx.md<CR>
+inoremap <nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1, 1)\<cr>" : "\<Right>"
+inoremap <nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0, -1)\<cr>" : "\<Left>"
 "===============================================
 "### PythonX
 "===============================================
