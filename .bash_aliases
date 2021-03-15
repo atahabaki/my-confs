@@ -11,6 +11,9 @@ then
 	alias gitremadd='git remote add'
 	alias gitcln='git clone'
 	alias gitpull='git pull'
+	gitacomf() {
+		git add "$1" && git commit -m "$2" "$1"
+	}
 fi
 if [ -e "$(which startx)" ]
 then
@@ -31,7 +34,6 @@ alias grep='grep --color=auto'
 alias getheads='curl -I'
 alias upgrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias relinux='sudo mkinitcpio -P'
-alias sysctl='systemctl'
 alias cls='clear'
 if [ -e "$(which pacman)" ]
 then
