@@ -231,5 +231,5 @@ for_window [class="calibre"] move container to workspace $ws7
 default_border pixel 2
 default_floating_border pixel 2
 
-exec_always feh --bg-scale ~/Pictures/neon_brick_atb.png
+exec_always feh --bg-scale ~/Pictures/Wallpapers/neon_brick_atb.png
 exec_always dunst&
