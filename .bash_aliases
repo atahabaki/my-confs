@@ -14,6 +14,9 @@ then
 	gitacomf() {
 		git add "$1" && git commit -m "$2" "$1"
 	}
+	gitdelbr() {
+		git push origin --delete "$1" && git branch -D "$1"
+	}
 fi
 if [ -e "$(which startx)" ]
 then
