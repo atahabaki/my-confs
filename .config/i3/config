@@ -220,6 +220,7 @@ bar {
 
 #for_window [class="jetbrains-studio"] floating enable
 for_window [class="jetbrains-studio"] move container to workspace $ws4
+for_window [class="Code"] move container to workspace $ws4, fullscreen enable
 for_window [class="Brave-browser-beta"] move container to workspace $ws2
 for_window [class="firefoxdeveloperedition"] move container to workspace $ws2
 for_window [class="konsole"] move container to workspace $ws3
