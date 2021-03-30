@@ -66,7 +66,11 @@ then
 fi
 if [ -e "$(which ffplay)" ]
 then
-	alias play3="ffplay -nodisp -autoexit"
+	play3="ffplay -nodisp -autoexit"
+	alias play3="${play3}"
+	play3all() {
+		for music in ~/Music/*.mp3; do $play3 "${music}"; done
+	}
 fi
 if [ -e "$(which ffmpeg)" ]
 then
