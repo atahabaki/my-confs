@@ -6,16 +6,18 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'digitaltoad/vim-pug'
 Plug 'rust-lang/rust.vim'
 Plug 'ollykel/v-vim'
+Plug 'udalov/kotlin-vim'
 "===============================================
 "### Themes
 "===============================================
 Plug 'sjl/badwolf', { 'as': 'badwolf' }
 Plug 'sainnhe/gruvbox-material', { 'as': 'gruvbox-material' }
-Plug 'atahabaki/archman-vim', { 'as': 'archman' }
 Plug 'franbach/miramare', { 'as': 'miramare' }
-Plug 'flrnd/candid.vim', { 'as': 'candid' }
 Plug 'sainnhe/sonokai', {'as': 'sonokai'} 
-Plug 'embark-theme/vim', { 'as': 'embark' }
+Plug 'arzg/vim-colors-xcode'
+Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+Plug 'ghifarit53/tokyonight-vim'
+Plug 'cseelus/vim-colors-lucid'
 call plug#end()
 "===============================================
 "### General Configs
@@ -52,11 +54,14 @@ let g:sonokai_style = 'shusia'
 let g:sonokai_enable_italic = 1
 let g:sonokai_disable_italic_comment = 0
 "===============================================
-"### Themes (Embark)
-"===============================================
-let g:embark_terminal_italics = 1
-"===============================================
-color sonokai
+"let g:material_theme_style = 'default' | 'palenight' | 'ocean' | 'lighter' | 'darker' | 'default-community' | 'palenight-community' | 'ocean-community' | 'lighter-community' | 'darker-community'
+let g:material_theme_style = 'darker'
+let g:material_terminal_italics = 1
+let g:tokyonight_style = 'night' " available: night, storm
+let g:tokyonight_enable_italic = 1
+set t_Co=256
+syntax on
+color material
 "===============================================
 "### Keybindings
 "===============================================
