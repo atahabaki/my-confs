@@ -1,0 +1,15 @@
+{
+    "window.menuBarVisibility": "toggle",
+    "workbench.colorTheme": "Monokai Pro (Filter Ristretto)",
+    "workbench.iconTheme": "vscode-icons",
+    "window.zoomLevel": -2,
+    "editor.fontFamily": "Fira Code Retina",
+    "editor.fontWeight": "700",
+    "editor.fontSize": 12,
+    "editor.rulers": [120],
+    "workbench.sideBar.location": "right",
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.fontFamily": "'Fira Code Retina'",
+    "editor.fontLigatures": true,
+    "vscode-neovim.neovimExecutablePaths.linux": "/home/atahabaki/Apps/Linux/nvim-linux64/bin/nvim",
+}
