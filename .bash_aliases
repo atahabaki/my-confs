@@ -69,16 +69,21 @@ then
 	play3="ffplay -nodisp -autoexit"
 	alias play3="${play3}"
 	play3all() {
-		for music in ~/Music/*.mp3; do $play3 "${music}"; done
+		IFS=$'\n'
+		musics=(`find ~/Music/ -name *.mp3 | shuf -`)
+		unset IFS
+		for music in "${musics[@]}"; do $play3 "$music"; done
 	}
 fi
 if [ -e "$(which ffmpeg)" ]
 then
 	screen_res="1366x768"
-	sleep_time=2
-	date_style='+%Y%m%d_%H%M%S'
 	alias recsxn="ffmpeg -f x11grab -s '$screen_res' -i :0.0 \"$HOME/Videos/Recording$(date $date_style).mp4\""
-	alias grbsxn="sleep '$sleep_time' && ffmpeg -f x11grab -video_size '$screen_res' -i '$DISPLAY' -vframes 1 \"$HOME/Pictures/Screenshots/Screenshot_$(date $date_style).png\""
+	grbsxn() {
+		sleep_time=2
+		date_style='+%Y%m%d_%H%M%S_%s'
+		sleep $sleep_time && ffmpeg -f x11grab -video_size $screen_res -i $DISPLAY -vframes 1 "$HOME/Pictures/Screenshots/Screenshot_$(date $date_style).png"
+	}
 fi
 if [ -e "$(which yapman.sh)" ] 
 then
