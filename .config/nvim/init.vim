@@ -61,7 +61,8 @@ let g:tokyonight_style = 'night' " available: night, storm
 let g:tokyonight_enable_italic = 1
 set t_Co=256
 syntax on
-color material
+set title
+color miramare
 "===============================================
 "### Keybindings
 "===============================================
