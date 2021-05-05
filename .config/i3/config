@@ -230,6 +230,7 @@ for_window [class="Blender"] move container to workspace $ws6
 for_window [class="calibre"] move container to workspace $ws7
 for_window [class="Inkscape"] move container to workspace $ws6
 for_window [class="Virt-manager"] move container to workspace $ws8 layout tabbed
+for_window [window_role="GtkFileChooserDialog"] fullscreen
 
 default_border pixel 2
 default_floating_border pixel 2
