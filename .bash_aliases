@@ -18,6 +18,18 @@ then
 		git push origin --delete "$1" && git branch -D "$1"
 	}
 fi
+if [ -e "$(which mount)" ]
+then
+	mountdir() {
+		sudo mkdir -p "$1" && sudo mount "$2" "$1"
+	}
+fi
+if [ -e "$(which umount)" ]
+then
+	umountdir() {
+		sudo umount "$1" && sudo rm -rf "$1"
+	}
+fi
 if [ -e "$(which startx)" ]
 then
 	alias stx="startx"
